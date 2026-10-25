@@ -13,3 +13,4 @@ venv/
 .coverage
 htmlcov/
 Motive of this Project.txt
+.gitignore
