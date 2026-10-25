@@ -1,0 +1,23 @@
+aws_region                    = "us-east-1"
+project_name                  = "example-posture"
+authorized_tcp_ports          = "443"
+enable_config_recorder        = true
+record_all_resources          = true
+enable_security_hub           = true
+enable_foundational_standard  = true
+findings_point_in_time_recovery      = true
+findings_deletion_protection_enabled = true
+lambda_runtime                = "python3.12"
+api_stage_name                = "v1"
+
+# Optional explicit names; leave unset to use generated names.
+# config_bucket_name     = "globally-unique-config-bucket-name"
+# findings_table_name    = "example-posture-findings"
+# notification_topic_name = "example-posture-approvals"
+
+# Replace or extend the managed AWS Config rule map as needed.
+# config_rules = {
+#   s3_public_read = {
+#     source_identifier = "S3_BUCKET_PUBLIC_READ_PROHIBITED"
+#   }
+# }
